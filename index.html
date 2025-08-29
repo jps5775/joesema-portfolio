@@ -1,117 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Joe Sema | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joe Sema | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <!-- HERO -->
+    <header>
+        <h1>Joe Sema</h1>
+        <p>Ex-Microsoft Software Engineer • Freelance Full Stack Developer</p>
+    </header>
 
-  <!-- HERO -->
-  <header>
-    <h1>Joe Sema</h1>
-    <p>Ex-Microsoft Software Engineer • Freelance Full Stack Developer</p>
-  </header>
+    <!-- COACHING -->
+    <section id="coaching">
+        <h2>Book a Coaching Session</h2>
+        <!-- Cal inline embed code begins -->
+        <div style="width:100%;height:100%;overflow:scroll"
+            id="my-cal-inline-software-engineering-big-tech-career-coaching"></div>
+        <script type="text/javascript">
+            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+            Cal("init", "software-engineering-big-tech-career-coaching", { origin: "https://app.cal.com" });
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <img src="assets/readingflo-logo.png" alt="ReadingFlo Logo" class="logo">
-        <h3><a href="https://www.readingflo.com" target="_blank">ReadingFlo</a></h3>
-        <p>A web app for language learners to read AI-generated texts, track progress, and explore graded stories.</p>
-        <p class="tech">Technologies: React, Netlify Functions, Firebase, Stripe</p>
-      </div>
-    </div>
-  </section>
+            Cal.ns["software-engineering-big-tech-career-coaching"]("inline", {
+                elementOrSelector: "#my-cal-inline-software-engineering-big-tech-career-coaching",
+                config: { "layout": "month_view", "theme": "dark" },
+                calLink: "joe-sema/software-engineering-big-tech-career-coaching",
+            });
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <h2>Work Experience</h2>
+            Cal.ns["software-engineering-big-tech-career-coaching"]("ui", { "theme": "dark", "hideEventTypeDetails": false, "layout": "month_view" });
+        </script>
+        <!-- Cal inline embed code ends -->
+    </section>
 
-    <div class="card">
-      <img src="assets/microsoft-logo.svg" width="75" height="75" 
-        alt="Microsoft Logo" class="company-logo">
-      <div>
-        <h3>Microsoft – Software Engineer</h3>
-        <p><em>May 2020 – Aug 2025</em></p>
-        <ul>
-          <li>Implemented Microsoft Office 365 privacy settings and OOBE UIs, saving $1M+ in GDPR requirements.</li>
-          <li>Engineered OOBE Marketing Dialogs and integrated with a growth pipeline for personalized upsells.</li>
-          <li>Developed and led Testing Automation suite achieving 100% coverage of critical privacy test cases.</li>
-        </ul>
-      </div>
-    </div>
+    <!-- FREELANCE -->
+    <section id="freelance">
+        <h2>Book an Initial Freelance Consultation</h2>
+        <!-- Cal inline embed code begins -->
+        <div style="width:100%;height:100%;overflow:scroll"
+            id="my-cal-inline-freelance-software-development-consultation"></div>
+        <script type="text/javascript">
+            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+            Cal("init", "freelance-software-development-consultation", { origin: "https://app.cal.com" });
 
-    <div class="card">
-      <img src="assets/accenture-logo.png" width="225" height="56.25" 
-        alt="Accenture Logo" class="company-logo">
-      <div>
-        <h3>Accenture – Software Engineer</h3>
-        <p><em>Aug 2019 – May 2020</em></p>
-        <ul>
-          <li>Architected microservices for Xfinity Virtual Assistant voice features, enabling 100+ new commands.</li>
-          <li>Managed 10+ Spring Boot microservices supporting billing, payments, and subscriptions.</li>
-          <li>Built React chat components to improve accessibility within the Virtual Assistant experience.</li>
-        </ul>
-      </div>
-    </div>
+            Cal.ns["freelance-software-development-consultation"]("inline", {
+                elementOrSelector: "#my-cal-inline-freelance-software-development-consultation",
+                config: { "layout": "month_view", "theme": "dark" },
+                calLink: "joe-sema/freelance-software-development-consultation",
+            });
 
-    <div class="card">
-      <img src="assets/vanguard-logo.svg" alt="Vanguard Logo" class="company-logo">
-      <div>
-        <h3>Vanguard – Software Engineer</h3>
-        <p><em>Jul 2018 – Aug 2019</em></p>
-        <ul>
-          <li>Designed internal web portal for financial record management and batch reporting.</li>
-          <li>Led Testing Automation initiative, raising coverage from 7% to 60% in 4 weeks.</li>
-          <li>Delivered exportable reporting for thousands of users across financial services.</li>
-        </ul>
-      </div>
-    </div>
+            Cal.ns["freelance-software-development-consultation"]("ui", { "theme": "dark", "hideEventTypeDetails": false, "layout": "month_view" });
+        </script>
+        <!-- Cal inline embed code ends -->
+    </section>
 
-  </section>
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <div class="project-container">
+                <a href="https://www.readingflo.com" target="_blank">
+                    <img src="assets/readingflo-logo.png" alt="ReadingFlo Logo" class="logo">
+                </a>
+                <h1>ReadingFlo</h1>
+            </div>
+            <ul>
+                <li>ReadingFlo.com is a language learning platform that helps you grow your reading skills through Comprehensible Input.</li>
+                <li>You can explore AI-generated and curated texts tailored to your level (A1–C1), track your progress with detailed reading stats, and gradually build your vocabulary in a natural way.</li>
+            </ul>
+        </div>
+    </section>
 
-  <!-- EDUCATION -->
-  <section id="education">
-    <h2>Education</h2>
-    <p><strong>The Pennsylvania State University</strong> – B.S. in Information Sciences and Technology (Design & Development)<br/>
-    Minor in Security Risk Analysis (Cyber-Security)</p>
-  </section>
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <h2>Work Experience</h2>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <p><strong>Languages:</strong> Java, Python, HTML, CSS, JavaScript, SQL, C++</p>
-    <p><strong>Frameworks:</strong> React, Spring Boot, Express</p>
-    <p><strong>Technologies:</strong> Azure App Service, Azure SQL Database, Azure Blob Storage, Netlify, Firebase (Auth & Realtime DB)</p>
-  </section>
+        <div class="card">
+            <a href="https://www.microsoft.com" target="_blank">
+                <img src="assets/microsoft-logo.svg" width="250" alt="Microsoft Logo" class="company-logo">
+            </a>
+            <div>
+                <h3>Microsoft – Software Engineer</h3>
+                <p><em>May 2020 – Aug 2025</em></p>
+                <ul>
+                    <li>Implemented Microsoft Office 365 privacy settings and OOBE UIs, saving $1M+ in GDPR
+                        requirements.</li>
+                    <li>Engineered OOBE Marketing Dialogs and integrated with a growth pipeline for personalized
+                        upsells.</li>
+                    <li>Developed and led Testing Automation suite achieving 100% coverage of critical privacy test
+                        cases.</li>
+                </ul>
+            </div>
+        </div>
 
-  <!-- RESUME -->
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>You can view or download my resume below:</p>
-    <p class="resume"><a href="assets/resume.pdf" target="_blank">📄 View Resume</a></p>
-  </section>
+        <div class="card">
+            <a href="https://www.accenture.com" target="_blank">
+                <img src="assets/accenture-logo.png" width="225" height="56.25" alt="Accenture Logo"
+                    class="company-logo">
+            </a>
+            <div>
+                <h3>Accenture – Software Engineer</h3>
+                <p><em>Aug 2019 – May 2020</em></p>
+                <ul>
+                    <li>Architected microservices for Xfinity Virtual Assistant voice features, enabling 100+ new
+                        commands.</li>
+                    <li>Managed 10+ Spring Boot microservices supporting billing, payments, and subscriptions.</li>
+                    <li>Built React chat components to improve accessibility within the Virtual Assistant experience.
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:doej4566@gmail.com">doej4566@gmail.com</a></p>
-    <p>Let’s connect:</p>
-    <p>
-      <a href="https://www.linkedin.com/in/joesema/" target="_blank">LinkedIn</a> |
-      <a href="https://twitter.com/realJoeSema" target="_blank">Twitter</a>
-    </p>
-  </section>
+        <div class="card">
+            <a href="https://www.vanguard.com" target="_blank">
+                <img src="assets/vanguard-logo.svg" width="225" height="56.25" alt="Vanguard Logo" class="company-logo">
+            </a>
+            <div>
+                <h3>Vanguard – Software Engineer</h3>
+                <p><em>Jul 2018 – Aug 2019</em></p>
+                <ul>
+                    <li>Designed internal web portal for financial record management and batch reporting.</li>
+                    <li>Led Testing Automation initiative, raising coverage from 7% to 60% in 4 weeks.</li>
+                    <li>Delivered exportable reporting for thousands of users across financial services.</li>
+                </ul>
+            </div>
+        </div>
 
-  <!-- FOOTER -->
-  <footer id="footer">
-    <p>&copy; 2025 Joe Sema. Built with ❤️ and deployed on Netlify.</p>
-  </footer>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <h3>Email: <a href="mailto:doej4566@gmail.com">doej4566@gmail.com</a></h3>
+            <h3>Resume: <a href="assets/resume.pdf" target="_blank">📄 View Resume</a></h3>
+            <h3>LinkedIn: <a href="https://www.linkedin.com/in/joesema/" target="_blank">LinkedIn</a></h3>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <p>&copy; 2025 Joe Sema</p>
+    </footer>
 </body>
+
 </html>
